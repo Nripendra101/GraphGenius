@@ -3,11 +3,20 @@ from neo4j import GraphDatabase
 from pyvis.network import Network
 import pandas as pd
 import streamlit.components.v1 as components
-
+import os
+from dotenv import load_dotenv
 # === Neo4j Configuration ===
-uri = "bolt://localhost:7687"
-username = "neo4j"
-password = "neo4j@123"  # 👈 Replace with your password
+# uri = "bolt://localhost:7687"
+# username = "neo4j"
+# password = "neo4j@123"  # 👈 Replace with your password
+# === Load Environment Variables ===
+load_dotenv()
+
+uri = os.getenv("NEO4J_URI")
+username = os.getenv("NEO4J_USERNAME")
+password = os.getenv("NEO4J_PASSWORD")
+
+driver = GraphDatabase.driver(uri, auth=(username, password))
 
 driver = GraphDatabase.driver(uri, auth=(username, password))
 
