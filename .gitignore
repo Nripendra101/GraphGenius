@@ -1,6 +1,5 @@
-.env
+# Ignore Python cache and environment files
 __pycache__/
-.vscode/
-.venv/
-graph.html
-
+*.pyc
+.env
+.env.*
