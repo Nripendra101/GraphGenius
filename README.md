@@ -24,7 +24,7 @@ This app helps you:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/neo4j-graph-explorer.git
+git clone https://github.com/your-username/GraphGenius.git
 cd neo4j-graph-explorer
 ```
 
@@ -141,7 +141,7 @@ This project uses `.env` to keep database credentials secure. Make sure you **ne
 
 ## 🧑‍💻 Author
 
-Developed by \[Your Name]
+Developed by \Nripendra Rajawat
 Open to contributions, suggestions, and improvements!
 
 ---
