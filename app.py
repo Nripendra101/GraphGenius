@@ -13,7 +13,10 @@ uri = os.getenv("NEO4J_URI")
 username = os.getenv("NEO4J_USERNAME")
 password = os.getenv("NEO4J_PASSWORD")
 
-driver = GraphDatabase.driver(uri, auth=(username, password))
+
+print("URI:", repr(uri))
+print("USERNAME:", repr(username))
+print("PASSWORD:", repr(password))
 
 driver = GraphDatabase.driver(uri, auth=(username, password))
 
