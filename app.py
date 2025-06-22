@@ -5,10 +5,7 @@ import pandas as pd
 import streamlit.components.v1 as components
 import os
 from dotenv import load_dotenv
-# === Neo4j Configuration ===
-# uri = "bolt://localhost:7687"
-# username = "neo4j"
-# password = "neo4j@123"  # 👈 Replace with your password
+
 # === Load Environment Variables ===
 load_dotenv()
 
